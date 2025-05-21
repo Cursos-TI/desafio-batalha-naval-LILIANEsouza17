@@ -15,19 +15,15 @@ int main() {
 
 
     //POSIÇÃO DOS NAVIOS NO TABULEIRO
-    int navio_vertical[4][6];
-    int navio_horizontal[7][9];
-    int tamanho_navio_vertical = 3;
-    int tamanho_navio_horizontal = 3;
-
+   
     //COLOCANDO NAVIOS NO TABULEIRO
    
-    for(int i = 2; i < 5; i++) { // PRIMEIRO NAVIO
+    for(int i = 2; i < 5; i++) { // PRIMEIRO NAVIO: VERTICAL 3 POSIÇÕES NA COLUNA G(ÍNDICE 6),LINHAS 2,3,4
        
         tabuleiro[i][6] = 3;
        
      }
-    for (int i = 1; i < 4; i++) { // SEGUNDO NAVIO
+    for (int i = 1; i < 4; i++) { // SEGUNDO NAVIO:HORIZONTAL 3 POSIÇÕES NA LINHA 7(ÍNDICE 6), COLUNAS B,C,D
        
     tabuleiro[6][i] = 3;
       
@@ -36,7 +32,7 @@ int main() {
     //EXIBIÇAO TABULEIRO COM LETRAS E NUMERAÇÃO DAS LINHAS
     printf("TABULEIRO BATALHA NAVAL: \n");
 
-    printf("  ");// EXIBIR AS LETRAS DE A-J
+    printf("       ");// EXIBIR AS LETRAS DE A-J
     for ( int c = 0; c < TAM; c++){
        printf(" %c", coluna[c]); 
     }
@@ -46,7 +42,7 @@ int main() {
     
 
     for (int i = 0; i < TAM; i++){
-        printf(" %2d", i+1);
+        printf(" %2d  ", i + 1);
         for(int j = 0; j < TAM; j++){
         printf(" %d", tabuleiro[i][j]); 
 
