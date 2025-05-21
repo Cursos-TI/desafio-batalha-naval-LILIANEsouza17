@@ -32,7 +32,7 @@ int main() {
     //EXIBIÇAO TABULEIRO COM LETRAS E NUMERAÇÃO DAS LINHAS
     printf("TABULEIRO BATALHA NAVAL: \n");
 
-    printf("       ");// EXIBIR AS LETRAS DE A-J
+    printf("      ");// EXIBIR AS LETRAS DE A-J
     for ( int c = 0; c < TAM; c++){
        printf(" %c", coluna[c]); 
     }
