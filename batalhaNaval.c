@@ -8,7 +8,7 @@ int main() {
     printf("DESAFIO BATALHA NAVAL\n");// tema do programa
     printf("\n");
     //CRIAÇÃO DO TABULEIRO 
-    int TAM = 10;
+    #DEFINE TAM = 10;
     int tabuleiro [TAM][TAM]= {0};
     char coluna[10] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
     
