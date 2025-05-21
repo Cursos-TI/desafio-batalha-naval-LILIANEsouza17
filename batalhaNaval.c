@@ -5,6 +5,13 @@
 // Siga os comentários para implementar cada parte do desafio.
 
 int main() {
+    printf("DESAFIO BATALHA NAVAL\n");// tema do programa
+    printf("\n");
+    //declaraçao da matriz 
+    int linha = {'1', '2', '3', '4', '5', '6', '7', '8', '9','10'};
+    char coluna = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
+    int tabuleiro[10][10];
+
     // Nível Novato - Posicionamento dos Navios
     // Sugestão: Declare uma matriz bidimensional para representar o tabuleiro (Ex: int tabuleiro[5][5];).
     // Sugestão: Posicione dois navios no tabuleiro, um verticalmente e outro horizontalmente.
