@@ -7,10 +7,58 @@
 int main() {
     printf("DESAFIO BATALHA NAVAL\n");// tema do programa
     printf("\n");
-    //declaraçao da matriz 
-    int linha = {'1', '2', '3', '4', '5', '6', '7', '8', '9','10'};
-    char coluna = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
-    int tabuleiro[10][10];
+    //CRIAÇÃO DO TABULEIRO 
+    int TAM = 10;
+    int tabuleiro [TAM][TAM]= {0};
+    char coluna[10] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
+    
+
+
+    //POSIÇÃO DOS NAVIOS NO TABULEIRO
+    int navio_vertical[4][6];
+    int navio_horizontal[7][9];
+    int tamanho_navio_vertical = 3;
+    int tamanho_navio_horizontal = 3;
+
+    //COLOCANDO NAVIOS NO TABULEIRO
+   
+    for(int i = 2; i < 5; i++) { // PRIMEIRO NAVIO
+       
+        tabuleiro[i][6] = 3;
+       
+     }
+    for (int i = 1; i < 4; i++) { // SEGUNDO NAVIO
+       
+    tabuleiro[6][i] = 3;
+      
+        
+    }
+    //EXIBIÇAO TABULEIRO COM LETRAS E NUMERAÇÃO DAS LINHAS
+    printf("TABULEIRO BATALHA NAVAL: \n");
+
+    printf("  ");// EXIBIR AS LETRAS DE A-J
+    for ( int c = 0; c < TAM; c++){
+       printf(" %c", coluna[c]); 
+    }
+    printf("\n");
+
+    
+    
+
+    for (int i = 0; i < TAM; i++){
+        printf(" %2d", i+1);
+        for(int j = 0; j < TAM; j++){
+        printf(" %d", tabuleiro[i][j]); 
+
+        }
+        printf("\n");
+    }
+    return 0;
+}
+    
+
+    
+
 
     // Nível Novato - Posicionamento dos Navios
     // Sugestão: Declare uma matriz bidimensional para representar o tabuleiro (Ex: int tabuleiro[5][5];).
@@ -43,5 +91,8 @@ int main() {
     // 1 1 1 1 1
     // 0 0 1 0 0
 
-    return 0;
-}
+ 
+    
+
+  
+    
